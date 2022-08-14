@@ -6,7 +6,7 @@ class transfer:
              tcolor = 0
              bcolor = 1
         lcd.fill(bcolor)
-        lcd.text('БАНКОВСКИЙ', -1, 0, tcolor)
-        lcd.text('ПЕРЕВОД:', -1, 10, tcolor)
-        lcd.text('>', -1, 20, tcolor)
+        lcd.text('БАНКОВСКИЙ', -1, 1, tcolor)
+        lcd.text('ПЕРЕВОД:', 0, 11, tcolor)
+        lcd.text('>', -1, 21, tcolor)
         lcd.show()
