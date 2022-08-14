@@ -1,16 +1,27 @@
 import pcd8544ed
-from machine import Pin, SPI
+from machine import Pin, SoftSPI
 from menu import menu
 
-spi = SPI(2)
-spi.init(baudrate=2000000, polarity=0, phase=0, miso=None)
-cs = Pin(4)
-dc = Pin(5)
-rst = Pin(0)
+spi = SoftSPI(baudrate=2000000, polarity=0, phase=0, sck=Pin(26), mosi=Pin(25), miso=Pin(23))
+spi.init()
+cs = Pin(32)
+dc = Pin(33)
+rst = Pin(17)
+Pin(13,Pin.OUT).value(1)
 lcd = pcd8544ed.PCD8544_FRAMEBUF_ED(spi, cs, dc, rst)
 
-br = Pin(15,Pin.IN)
+pina = Pin(27,Pin.OUT)
+pinb = Pin(14,Pin.OUT)
+pinc = Pin(12,Pin.OUT)
+pina(0)#R
+pinb(0)#G
+pinc(1)#B
+
+br = Pin(23,Pin.IN, Pin.PULL_DOWN)
 if br.value():
+    print(br.value())
+    pina(1)#R
+    pinb(1)#G
     lcd.text('РЕЖИМ',0,0,1)
     lcd.text('ОТЛАДКИ',0,10,1)
     lcd.show()
@@ -70,6 +81,6 @@ else:
             lcd.pixel(x,y,logo[y][x])
 
     del logo
-
+    
     lcd.show()
     menu.run(lcd)
