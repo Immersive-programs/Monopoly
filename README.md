@@ -46,4 +46,7 @@
 - micropython-mfrc522 -> https://github.com/cefn/micropython-mfrc522
 - micropython-pcd8544 -> https://github.com/mcauser/micropython-pcd8544
 
-### Деменстрация: todo
+### Деменстрация: 
+- Фото
+  - ![monopoly](https://user-images.githubusercontent.com/80697141/184915515-8747c16c-591b-4cbb-b4f1-a67a5b950d39.jpg)
+
