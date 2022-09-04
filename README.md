@@ -88,7 +88,7 @@
 
 ### Деменстрация: 
 - Фото:
-  - ![monopoly](https://user-images.githubusercontent.com/80697141/184915515-8747c16c-591b-4cbb-b4f1-a67a5b950d39.jpg)
+  - ![IMG_20220904_155715](https://user-images.githubusercontent.com/80697141/188309613-837af193-8d40-41a5-9a95-b12475f34ae7.jpg)
 - Видео:
   -  todo
 
