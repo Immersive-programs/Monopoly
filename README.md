@@ -1,4 +1,4 @@
-# Monopoly
+# OLD Monopoly
 
 ## Проект электронного терминала для игры Monopoly.
 
